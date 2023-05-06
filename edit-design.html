@@ -1,0 +1,95 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/edit-design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+
+    <title>Edit Desgin</title>
+
+</head>
+
+
+    <body>
+
+    <div class="designs"> 
+       
+
+        <div class='card'>
+
+        <img src='resource/a1.png' id='my-image' class='image-design' >
+        
+
+          <div class='price'>
+            <label>Price :</label>
+            <input type='number' name='fprice' value='$price' />JOD
+          </div>
+
+          <div>
+            <label>Area :</label>
+            <input type='number' name='farea' value='$area' />m
+          </div>
+
+          <div>
+            <label> Room : </label>
+            <input type='number' name='froom' value='$room' />
+          </div>
+
+          <div>
+            <label> Bathroom : </label>
+            <input type='number' name='fbathroom' value='$bathroom' />
+          </div>
+
+          <div>
+            <label>Balcony </label>
+            <input type='number' name='fbalcony' value='$balcony' />
+          </div>
+
+          <div>
+            <label>Garden : </label>
+            <input type='number' name='fgarden' value='$garden' />
+          </div>
+
+          <div>
+            <label>Location : </label>
+
+
+            <select name='fcity' class='box-item'>
+            <option value='Amman' " . ($city == 'Amman' ? 'selected' : '') . ">Amman</option>
+            <option value='Al-Zarqa' " . ($city == 'Al-Zarqa' ? 'selected' : '') . ">Al-Zarqa</option>
+            <option value='Al-Balqaa' " . ($city == 'Al-Balqaa' ? 'selected' : '') . ">Al-Balqaa</option>
+            <option value='Ajloun' " . ($city == 'Ajloun' ? 'selected' : '') . ">Ajloun</option>
+            <option value='Al-Mafraq' " . ($city == 'Al-Mafraq' ? 'selected' : '') . ">Al-Mafraq</option>
+            <option value='Irbid' " . ($city == 'Irbid' ? 'selected' : '') . ">Irbid</option>
+            <option value='Jarash' " . ($city == 'Jarash' ? 'selected' : '') . ">Jarash</option>
+            <option value='Aqaba' " . ($city == 'Aqaba' ? 'selected' : '') . ">Aqaba</option>
+            <option value='Al-karak' " . ($city == 'Al-karak' ? 'selected' : '') . ">Al-karak</option>
+            <option value='Maan' " . ($city == 'Maan' ? 'selected' : '') . ">Maan</option>
+            <option value='Madaba' " . ($city == 'Madaba' ? 'selected' : '') . ">Madaba</option>
+            <option value='Al-Tafila' " . ($city == 'Al-Tafila' ? 'selected' : '') . ">Al-Tafila</option>
+            <option value='Maan' " . ($city == 'Maan' ? 'selected' : '') . ">Maan</option>
+
+            </select>
+          </div>
+    
+            <div class='buttons'> 
+              <button type='submit' value='$id_design' name='delete'>Delete</button> 
+              <button type='submit' value='$id_design' name='save'>Sava</button> </div>
+            </div>
+        
+        </form>
+        
+
+</div>   
+
+</body>
+</html>
